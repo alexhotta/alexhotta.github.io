@@ -13,6 +13,9 @@
             countobj = document.getElementById("count");
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
+       
+            var redValue = Math.round((20 - i) * 10); 
+            document.body.style.backgroundColor = "rgb(" + redValue + ", 0, 0)";
 
           if (i === 0) {
             document.body.style.backgroundColor = "blue";
