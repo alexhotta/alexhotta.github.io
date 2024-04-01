@@ -59,6 +59,18 @@
 <center>
   <a href="outside.jpg"><img width="80%" src="/outside.jpg"></a>
 </center>
+  
+<button onclick="incrementCounter()">Press me!</button>
+<p>Number of times button has been pressed: <span id="counter">0</span></p>
+
+<script>
+  var count = 0;
+
+  function incrementCounter() {
+    count++;
+    document.getElementById("counter").textContent = count;
+  }
+</script>
 
 </body>  
 </html>
